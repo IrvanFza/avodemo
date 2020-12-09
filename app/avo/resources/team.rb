@@ -9,6 +9,7 @@ module Avo
 
       fields do
         id
+        title :name, name: 'Nnameee'
         text :name, link_to_resource: true
         textarea :description, rows: 5, readonly: false, hide_on: :index, format_using: -> (value) { value.to_s.truncate 30 }, default: 'This team is wonderful!', nullable: true, null_values: ['0', '', 'null', 'nil']
 
@@ -17,7 +18,7 @@ module Avo
         end
 
         has_one :admin
-        has_many :members
+        has_and_belongs_to_many :members
       end
     end
   end

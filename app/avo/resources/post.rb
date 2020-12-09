@@ -5,7 +5,7 @@ module Avo
         @title = :name
         @search = [:name, :id]
         @includes = :user
-        @default_view_type = :grid
+        # @default_view_type = :grid
       end
 
       fields do
@@ -34,11 +34,11 @@ module Avo
       end
 
       # These fields are a reference on the already configured fields above
-      grid do
-        preview :cdn_cover_photo
-        title :name
-        body :excerpt
-      end
+      # grid do
+      #   preview :cdn_cover_photo
+      #   title :name
+      #   body :excerpt
+      # end
 
       use_filter Avo::Filters::FeaturedFilter
       use_filter Avo::Filters::PublishedFilter

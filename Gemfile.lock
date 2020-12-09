@@ -1,3 +1,17 @@
+PATH
+  remote: latest-avo
+  specs:
+    avo (0.4.2)
+      countries
+      httparty
+      i18n-js
+      inline_svg
+      kaminari
+      pundit
+      rails (>= 6.0)
+      webpacker
+      zeitwerk
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -58,16 +72,6 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    avo (0.4.2)
-      countries
-      httparty
-      i18n-js
-      inline_svg
-      kaminari
-      pundit
-      rails (>= 6.0)
-      webpacker
-      zeitwerk
     aws-eventstream (1.1.0)
     aws-partitions (1.376.0)
     aws-sdk-core (3.108.0)
@@ -282,7 +286,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  avo
+  avo!
   aws-sdk-s3
   bootsnap (>= 1.4.2)
   byebug

@@ -64,4 +64,11 @@ gem 'aws-sdk-s3', require: false
 
 gem 'dotenv-rails', groups: [ :development, :test ]
 
-gem 'avo'
+# gem 'avo'
+# gem 'i18n-js'
+
+# gem 'avo'
+# source "https://rubygems.pkg.github.com/avo-hq" do
+  # gem "avo", "0.3.0"
+# end
+gem 'avo', path: './latest-avo'
