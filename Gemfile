@@ -62,7 +62,8 @@ gem 'faker'
 # File storage S3
 gem 'aws-sdk-s3', require: false
 
-gem 'dotenv-rails', groups: [ :development, :test ]
+# gem 'dotenv-rails', groups: [ :development, :test ]
+gem 'dotenv-rails'
 
 # gem 'avo'
 # gem 'i18n-js'
@@ -72,3 +73,5 @@ gem 'dotenv-rails', groups: [ :development, :test ]
   # gem "avo", "0.3.0"
 # end
 gem 'avo', path: './latest-avo'
+
+gem 'newrelic_rpm'
