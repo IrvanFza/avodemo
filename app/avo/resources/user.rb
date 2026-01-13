@@ -46,8 +46,10 @@ class Avo::Resources::User < Avo::BaseResource
       field :id, as: :id, link_to_record: true
       field :email, as: :gravatar, link_to_record: true, as_avatar: :circle, only_on: :index
       field :user_information, as: :heading
-      field :first_name, as: :text, placeholder: "John", stacked: true, filterable: true
-      field :last_name, as: :text, placeholder: "Doe", filterable: true
+      row do
+        field :first_name, as: :text, placeholder: "John", stacked: true, filterable: true
+        field :last_name, as: :text, placeholder: "Doe", filterable: true, stacked: true
+      end
       field :email, as: :text, name: "User Email", required: true, protocol: :mailto, filterable: true
       field :active, as: :boolean, name: "Is active", only_on: :index, filterable: true
       field :cv, as: :file, name: "CV"
