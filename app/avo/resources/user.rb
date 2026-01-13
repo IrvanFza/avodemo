@@ -49,8 +49,8 @@ class Avo::Resources::User < Avo::BaseResource
       row do
         field :first_name, as: :text, placeholder: "John", stacked: true, filterable: true
         field :last_name, as: :text, placeholder: "Doe", filterable: true, stacked: true
+        field :email, as: :text, name: "User Email", required: true, protocol: :mailto, filterable: true, stacked: true
       end
-      field :email, as: :text, name: "User Email", required: true, protocol: :mailto, filterable: true
       field :active, as: :boolean, name: "Is active", only_on: :index, filterable: true
       field :cv, as: :file, name: "CV"
       field :is_admin?, as: :boolean, name: "Is admin", only_on: :index, filterable: true
