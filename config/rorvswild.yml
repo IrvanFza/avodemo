@@ -9,7 +9,7 @@ development:
   editor_url: <%= ENV.fetch("RORVSWILD_EDITOR_URL", "vscode://file${path}:${line}") %>
 
 production:
-  api_key: BuTQG_LZnq5SxnkDSFke
+  api_key: xaPZrsmAnaqtT1KY0rs4
   # ignore_requests: # Do not monitor the following actions
   #   - SecretController#index
   # ignore_jobs: # Do not monitor the following jobs
