@@ -17,6 +17,9 @@ production:
   ignore_exceptions: # Do not record the following exceptions
     - ActionController::RoutingError  # By default to ignore 404
     - ActiveRecord::RecordNotFound
+    - ActionController::InvalidAuthenticityToken
+    - ActionDispatch::Http::MimeNegotiation::InvalidType
+    - ActionDispatch::RemoteIp::IpSpoofAttackError
   # ignore_plugins:
   #   - ActionController
   #   - ActionMailer
@@ -36,8 +39,8 @@ production:
   # # Deployment tracking is working without any actions from your part if the Rails app
   # # is inside a Git repositoriy, is deployed via Capistrano.
   # # In the other cases, you can provide the following details.
-  # deployment:
-  #   revision: <%= "Anything that will return the deployment version" %> # Mandatory
+  deployment:
+    revision: <%= File.read("REVISION") if File.file?("REVISION") %> # Mandatory
   #   description: <%= "Eventually if you have a description such as a Git message" %>
   #   author: <%= "Author's name of the deployment" %>
   #   email: <%= "emailOf@theAuthor.example" %>
