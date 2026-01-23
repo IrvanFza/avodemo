@@ -181,6 +181,8 @@ GEM
       xpath (~> 3.2)
     chartkick (5.0.2)
     chronic (0.10.2)
+    commonmarker (2.0.1)
+      rb_sys (~> 0.9)
     commonmarker (2.0.1-aarch64-linux)
     commonmarker (2.0.1-arm64-darwin)
     commonmarker (2.0.1-x86_64-linux)
@@ -217,6 +219,8 @@ GEM
       railties (>= 5.0.0)
     faker (3.5.2)
       i18n (>= 1.8.11, < 2)
+    ffi (1.17.3)
+    ffi (1.17.3-aarch64-linux-gnu)
     ffi (1.17.3-arm64-darwin)
     ffi (1.17.3-x86_64-linux-gnu)
     friendly_id (5.4.2)
@@ -270,6 +274,7 @@ GEM
       actionpack (>= 6.0.0, < 8.2)
     mini_magick (4.12.0)
     mini_mime (1.1.5)
+    mini_portile2 (2.8.9)
     minitest (5.26.0)
     monetize (1.13.0)
       money (~> 6.12)
@@ -293,6 +298,9 @@ GEM
     net-smtp (0.5.1)
       net-protocol
     nio4r (2.7.4)
+    nokogiri (1.18.10)
+      mini_portile2 (~> 2.8.2)
+      racc (~> 1.4)
     nokogiri (1.18.10-aarch64-linux-gnu)
       racc (~> 1.4)
     nokogiri (1.18.10-arm64-darwin)
@@ -357,10 +365,13 @@ GEM
       thor (~> 1.0, >= 1.2.2)
       zeitwerk (~> 2.6)
     rake (13.3.1)
+    rake-compiler-dock (1.11.0)
     ransack (4.3.0)
       activerecord (>= 6.1.5)
       activesupport (>= 6.1.5)
       i18n
+    rb_sys (0.9.124)
+      rake-compiler-dock (= 1.11.0)
     rdoc (6.15.1)
       erb
       psych (>= 4.0.0)
@@ -396,6 +407,8 @@ GEM
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
     stringio (3.1.7)
+    tailwindcss-rails (2.0.29)
+      railties (>= 6.0.0)
     tailwindcss-rails (2.0.29-aarch64-linux)
       railties (>= 6.0.0)
     tailwindcss-rails (2.0.29-arm64-darwin)
@@ -443,6 +456,7 @@ PLATFORMS
   aarch64-linux
   arm64-darwin-23
   arm64-darwin-24
+  ruby
   x86_64-linux
 
 DEPENDENCIES
