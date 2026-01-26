@@ -110,7 +110,7 @@ gem 'ransack'
 
 gem 'bugsnag'
 
-gem "tailwindcss-rails", "~> 2.0"
+gem "tailwindcss-rails", "~> 2.7"
 
 gem "mini_magick"
 
