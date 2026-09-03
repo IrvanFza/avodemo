@@ -5,6 +5,10 @@ class PullRequest < ApplicationRecord
 
   validates :title, presence: true
 
+  # Remove this record's kanban cards with it; otherwise the board 500s on the
+  # orphaned item (Avo::Kanban::ItemComponent.resource_for on a nil record).
+  has_many :kanban_items, class_name: "Avo::Kanban::Item", as: :record, dependent: :destroy
+
   default_scope { order(number: :asc) }
 
   def name
