@@ -33,7 +33,11 @@ class SeedService
       {name: "New York", population: 8398748, is_capital: false, longitude: -74.006, latitude: 40.7128},
       {name: "Los Angeles", population: 3990456, is_capital: false, longitude: -118.2437, latitude: 34.0522},
       {name: "Bucharest", population: 1800000, is_capital: true, longitude: 26.1025, latitude: 44.4268},
-      {name: "Hong Kong", population: 7500000, is_capital: true, longitude: 114.1694, latitude: 22.3193}
+      {name: "Hong Kong", population: 7500000, is_capital: true, longitude: 114.1694, latitude: 22.3193},
+      {name: "Barcelona", population: 1620343, is_capital: false, longitude: 2.1686, latitude: 41.3874},
+      {name: "Tokyo", population: 13960000, is_capital: true, longitude: 139.6503, latitude: 35.6762},
+      {name: "Sydney", population: 5312000, is_capital: false, longitude: 151.2093, latitude: -33.8688},
+      {name: "Cape Town", population: 4618000, is_capital: true, longitude: 18.4241, latitude: -33.9249}
     ]
 
     cities.each do |city_params|
